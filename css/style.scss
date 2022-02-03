@@ -7,3 +7,82 @@
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: $Very-Light-Gray;
+}
+
+main {
+  max-width: 300px;
+  width: 80%;
+}
+.description {
+  line-height: 1.2em;
+  .subtitle {
+    line-height: 1.5em;
+    font-weight: 400;
+    color: $Grayish-Blue;
+    letter-spacing: 0.05em;
+  }
+  .title {
+    line-height: 1.5em;
+    font-weight: 900;
+    color: $Very-Dark-Blue;
+    padding-bottom: .5em;
+    letter-spacing: 0.1em;
+  }
+
+  p {
+    line-height: 1.5em;
+    font-size: 1.1em;
+    font-weight: 200;
+    text-align: center;
+    color: $Grayish-Blue;
+    padding-bottom: 4em;
+  }
+}
+
+.super,
+.team-builder,
+.karma,
+.calculator {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5em 1em;
+  background-color: white;
+  margin-bottom: 1.5em;
+  border-radius:0.3em;
+  box-shadow: -6px 6px 10px 0px #E6E8F4;
+  h2 {
+    color: $Very-Dark-Blue;
+    padding-bottom: 0.5em;
+    font-weight: 900;
+  }
+  p {
+    color: $Grayish-Blue;
+    line-height: 1.5em;
+    font-size: 1.1em;
+    font-weight: 200;
+  }
+  img {
+    align-self: flex-end;
+    margin-top: 1em;
+  }
+}
+.super {
+  border-top: 3px solid $Cyan;
+}
+.team-builder {
+  border-top: 3px solid $Red;
+}
+.karma {
+  border-top: 3px solid $Orange;
+}
+.calculator {
+  border-top: 3px solid $Blue;
+}
