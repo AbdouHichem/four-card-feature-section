@@ -52,7 +52,7 @@ main {
   line-height: 1.5em;
   font-weight: 900;
   color: #4c4e61;
-  padding-bottom: .5em;
+  padding-bottom: 0.5em;
   letter-spacing: 0.1em;
 }
 
@@ -80,8 +80,8 @@ main {
   background-color: white;
   margin-bottom: 1.5em;
   border-radius: 0.3em;
-  -webkit-box-shadow: -6px 6px 10px 0px #E6E8F4;
-          box-shadow: -6px 6px 10px 0px #E6E8F4;
+  -webkit-box-shadow: -6px 6px 10px 0px #e6e8f4;
+          box-shadow: -6px 6px 10px 0px #e6e8f4;
 }
 
 .super h2,
@@ -113,18 +113,79 @@ main {
 }
 
 .super {
-  border-top: 3px solid #45d3d3;
+  border-top: 0.3em solid #45d3d3;
 }
 
 .team-builder {
-  border-top: 3px solid #ea5353;
+  border-top: 0.3em solid #ea5353;
 }
 
 .karma {
-  border-top: 3px solid #fcaf4a;
+  border-top: 0.3em solid #fcaf4a;
 }
 
 .calculator {
-  border-top: 3px solid #549ef2;
+  border-top: 0.3em solid #549ef2;
+}
+
+@media only screen and (min-width: 1230px) {
+  main {
+    max-width: 900px;
+    width: 80%;
+  }
+  .description {
+    padding: 1em 5em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .description .subtitle {
+    font-size: 2em;
+  }
+  .description .title {
+    font-size: 2.2em;
+    font-weight: bold;
+  }
+  .description p {
+    font-size: 1.3em;
+    padding-bottom: 1.5em;
+  }
+  .cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .super,
+  .team-builder,
+  .karma,
+  .calculator {
+    padding: 2em 2em;
+    min-width: 340px;
+  }
+  .super img,
+  .team-builder img,
+  .karma img,
+  .calculator img {
+    margin-top: 2.5em;
+  }
+  .row {
+    margin: 0em 3em;
+  }
 }
 /*# sourceMappingURL=style.css.map */

@@ -33,7 +33,7 @@ main {
     line-height: 1.5em;
     font-weight: 900;
     color: $Very-Dark-Blue;
-    padding-bottom: .5em;
+    padding-bottom: 0.5em;
     letter-spacing: 0.1em;
   }
 
@@ -54,10 +54,11 @@ main {
   display: flex;
   flex-direction: column;
   padding: 1.5em 1em;
+  
   background-color: white;
   margin-bottom: 1.5em;
-  border-radius:0.3em;
-  box-shadow: -6px 6px 10px 0px #E6E8F4;
+  border-radius: 0.3em;
+  box-shadow: -6px 6px 10px 0px #e6e8f4;
   h2 {
     color: $Very-Dark-Blue;
     padding-bottom: 0.5em;
@@ -75,14 +76,59 @@ main {
   }
 }
 .super {
-  border-top: 3px solid $Cyan;
+  border-top: .3em solid $Cyan;
 }
 .team-builder {
-  border-top: 3px solid $Red;
+  border-top: .3em solid $Red;
 }
 .karma {
-  border-top: 3px solid $Orange;
+  border-top: .3em solid $Orange;
 }
 .calculator {
-  border-top: 3px solid $Blue;
+  border-top: .3em solid $Blue;
+}
+
+@media only screen and (min-width: 1230px) {
+  main {
+    max-width: 900px;
+    width: 80%;
+  }
+  .description {
+    padding: 1em 5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .subtitle {
+      font-size: 2em;
+    }
+    .title {
+      font-size: 2.2em;
+      font-weight: bold;
+    }
+
+    p {
+      font-size: 1.3em;
+      padding-bottom: 1.5em ;
+    }
+  }
+
+  .cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.super,
+.team-builder,
+.karma,
+.calculator{
+  padding:2em 2em;
+  min-width:340px;
+  img{
+margin-top:2.5em;
+  }
+}
+.row {
+  margin: 0em 3em;
+}
 }
